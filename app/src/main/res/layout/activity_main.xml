@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.szsszwl.jnipro.view.HorizontalAutoScrollLayout
+        android:id="@+id/has"
+        app:rowCount="4"
+        app:horizontalMargin="15dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="150dp">
+
+    </com.szsszwl.jnipro.view.HorizontalAutoScrollLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_gravity="center"
+        android:text="开始"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/stop"
+        android:layout_gravity="center"
+        android:text="停止"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/go_host"
+        android:layout_gravity="center"
+        android:text="跳转到TabHost Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/go_native"
+        android:layout_gravity="center"
+        android:text="跳转到Native Overflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/go_exception"
+        android:layout_gravity="center"
+        android:text="跳转到Exception Throw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:background="@drawable/rb_unselected"
+        android:layout_width="200dp"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:text="已关注"
+            android:textColor="@color/rb_text_select_affect"
+            android:button="@null"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/rb_selector_affect"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="未关注"
+            android:textColor="@color/rb_text_select_affect"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/rb_selector_affect"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+</LinearLayout>
